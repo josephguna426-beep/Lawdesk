@@ -1,0 +1,17 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+# node
+node_modules/
+dist/
+# private storage & backups (never commit)
+backend/private_storage/*
+!backend/private_storage/.gitkeep
+backups/*
+!backups/.gitkeep
+.DS_Store
+.idea/
+.vscode/

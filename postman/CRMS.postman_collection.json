@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "CRMS API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8000" }],
+  "item": [
+    { "name": "Auth - CSRF", "request": { "method": "GET", "url": "{{baseUrl}}/api/auth/csrf/" } },
+    { "name": "Auth - Login", "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }], "url": "{{baseUrl}}/api/auth/login/", "body": { "mode": "raw", "raw": "{\"username\": \"admin\", \"password\": \"change-me\"}" } } },
+    { "name": "Auth - Me", "request": { "method": "GET", "url": "{{baseUrl}}/api/auth/me/" } },
+    { "name": "Cases - List", "request": { "method": "GET", "url": "{{baseUrl}}/api/cases/" } },
+    { "name": "Hearings - List", "request": { "method": "GET", "url": "{{baseUrl}}/api/hearings/" } },
+    { "name": "Dashboard", "request": { "method": "GET", "url": "{{baseUrl}}/api/dashboard/" } }
+  ]
+}
